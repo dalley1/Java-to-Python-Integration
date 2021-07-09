@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>{% block title %}Login Page{% endblock %}</title>
+<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/main.css')}}">
+<link rel="stylesheet" type= "text/css" href="{{url_for('static', filename='style/login.css')}}">
+
+      <script>
+    function openFile() {
+      window.open("/home");
+    }
+    </script>
+    </head>
+    <body><div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="username" name="" required="">
+          <label>Username *</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="">
+          <label>Password *</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="button" value="Submit" onclick="openFile()">
+        </a>
+      </form>
+    </div></body></html>
